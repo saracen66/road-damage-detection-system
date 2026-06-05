@@ -1,6 +1,6 @@
-# AI-Based Road Damage Detection System
+# Road Damage Detection System
 
-An AI-powered road damage detection platform developed for the AI Competition by **Team Anvil**. The system uses a custom-trained YOLO model to detect road damages from images and videos, estimate severity, assign maintenance priority, and generate actionable maintenance recommendations.
+A road damage detection platform developed for the DIU AI Competition by **Team Anvil**. The system uses a custom-trained YOLO model to detect road damages from images and videos, estimate severity, assign maintenance priority, and generate actionable maintenance recommendations.
 
 ---
 
