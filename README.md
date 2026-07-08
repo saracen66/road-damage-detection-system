@@ -455,8 +455,8 @@ Install the latest Microsoft Visual C++ Redistributable (x64), restart the PC if
 ---
 
 ## Team
-**QRARG-PavAnalitics**
-**Team Anvil**
+**QRARG-PavAnalytics**
+(**Team Anvil**)
 
 AI Competition Project
 
