@@ -1,6 +1,6 @@
 # Road Damage Detection System
 
-A road damage detection platform developed for the DIU AI Competition by **Team Anvil**. The system uses a custom-trained YOLO model to detect road damages from images and videos, estimate severity, assign maintenance priority, and generate actionable maintenance recommendations.
+A road damage detection platform developed for the DIU AI Competition by **QRARG-PavAnalytics** AKA **Team Anvil**. The system uses a custom-trained YOLO model to detect road damage from images and videos, estimate severity, assign maintenance priority, and generate actionable maintenance recommendations.
 
 ---
 
@@ -84,6 +84,93 @@ git --version
 ```
 
 ---
+
+
+
+## Complete Prerequisites (Recommended for a Brand-New Windows PC)
+
+Before running the project on a new computer, install the following components in order.
+
+### 1. Python (3.11 or newer)
+
+Download from:
+https://www.python.org/downloads/
+
+**Important:** During installation, enable **"Add Python to PATH"**.
+
+Verify:
+
+```bash
+python --version
+pip --version
+```
+
+---
+
+### 2. Git
+
+Download:
+
+https://git-scm.com/downloads
+
+Verify:
+
+```bash
+git --version
+```
+
+---
+
+### 3. Microsoft Visual C++ Redistributable
+
+Some Python libraries (including OpenCV, PyTorch and Ultralytics) may fail to start if the required Microsoft runtime is missing.
+
+Download and install the latest **Microsoft Visual C++ Redistributable (x64)**:
+
+https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist
+
+Restart the computer after installation if prompted.
+
+---
+
+### 4. FFmpeg
+
+FFmpeg is required for reliable video processing.
+
+#### Option A (Recommended)
+
+```powershell
+winget install Gyan.FFmpeg
+```
+
+#### Option B (Manual)
+
+Download:
+
+https://www.gyan.dev/ffmpeg/builds/
+
+Download **ffmpeg-release-essentials.zip**, extract it (for example to `C:\ffmpeg`) and add:
+
+```text
+C:\ffmpeg\bin
+```
+
+to your Windows **Path** environment variable.
+
+Verify:
+
+```bash
+ffmpeg -version
+```
+
+---
+
+### 5. Update pip
+
+```bash
+python -m pip install --upgrade pip
+```
+
 
 ## Installation Guide
 
@@ -318,6 +405,42 @@ exists.
 
 ---
 
+
+
+### FFmpeg Not Found
+
+Error:
+
+```text
+'ffmpeg' is not recognized as an internal or external command
+```
+
+Solution:
+
+- Install FFmpeg.
+- Ensure `C:\ffmpeg\bin` (or your FFmpeg installation folder) is added to the system PATH.
+- Open a new terminal and verify with:
+
+```bash
+ffmpeg -version
+```
+
+---
+
+### Microsoft Visual C++ Runtime Missing
+
+Symptoms:
+
+- OpenCV fails to import.
+- PyTorch or Ultralytics crashes immediately.
+- DLL-related errors (for example `VCRUNTIME140.dll` or `MSVCP140.dll`).
+
+Solution:
+
+Install the latest Microsoft Visual C++ Redistributable (x64), restart the PC if required, then run the application again.
+
+---
+
 ## Technology Stack
 
 - Python
@@ -332,7 +455,7 @@ exists.
 ---
 
 ## Team
-
+**QRARG-PavAnalitics**
 **Team Anvil**
 
 AI Competition Project
